@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rafaelsilvapr.github.io/cibeleerafael/sitemap.xml
