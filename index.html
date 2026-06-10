@@ -4,112 +4,142 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Cibele e Rafael — Um passeio sonoro pelo Brasil</title>
-<meta name="description" content="Cibele e Rafael — um passeio sonoro pelo Brasil. Música brasileira elegante ao vivo. Bagé/RS e região." />
-<meta property="og:title" content="Cibele e Rafael — Um passeio sonoro pelo Brasil" />
-<meta property="og:description" content="Muitos Brasis num só repertório. Música brasileira elegante ao vivo." />
-<meta property="og:image" content="img/og.jpg" />
+<meta name="description" content="Cibele e Rafael — duo de música brasileira ao vivo em Bagé/RS e região. Um passeio sonoro pelo Brasil: samba, bossa, choro e MPB para casamentos, recepções, eventos corporativos e vinícolas." />
+<meta name="theme-color" content="#284F3C" />
+<link rel="canonical" href="https://cibeleerafael.com.br/" />
 <meta property="og:type" content="website" />
+<meta property="og:title" content="Cibele e Rafael — Um passeio sonoro pelo Brasil" />
+<meta property="og:description" content="Música brasileira elegante ao vivo. Casamentos, recepções e eventos. Bagé/RS e região." />
+<meta property="og:image" content="https://cibeleerafael.com.br/img/og.jpg" />
+<meta property="og:url" content="https://cibeleerafael.com.br/" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MusicGroup","name":"Cibele e Rafael","description":"Duo de música brasileira ao vivo — um passeio sonoro pelo Brasil.","url":"https://cibeleerafael.com.br","genre":["MPB","Samba","Bossa Nova","Choro"],"areaServed":"Bagé/RS e região","sameAs":["https://instagram.com/rafaelsilva.pr","https://instagram.com/martinezzcibele","https://www.tiktok.com/@cibele.e.rafael","https://open.spotify.com/artist/0Jr9Wb6RshiRS6lm1VDwEt"]}
+</script>
 <style>
-:root{ --ink:#15110D; --bone:#F3EEE4; --gold:#B8923F; --muted:#8E8678; }
+/* ===== Tokens (direção verde — final) ===== */
+:root{
+  --verde:#284F3C; --verde-deep:#1F3D2D; --amber:#C9A24A;
+  --cream:#F1ECE0; --paper:#FBFAF7; --salvia:#6E8E76; --pewter:#5B646A; --grafite:#23241F;
+  --serif:'Cormorant',Georgia,serif; --sans:'Archivo',system-ui,sans-serif;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:var(--bone);-webkit-font-smoothing:antialiased;line-height:1.65;font-weight:300}
-.serif{font-family:"Fraunces",Georgia,serif}
+body{font-family:var(--sans);color:var(--grafite);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.7;font-weight:300}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 .wrap{width:min(980px,90%);margin-inline:auto}
-.label{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
-.btn{display:inline-block;border:1px solid currentColor;padding:.7rem 1.6rem;border-radius:999px;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;transition:.2s}
-.btn:hover{background:var(--ink);color:var(--bone);border-color:var(--ink)}
-.hero .btn{color:#fff}
-.hero .btn:hover{background:#fff;color:var(--ink)}
+.serif{font-family:var(--serif)}
+.kicker{font-family:var(--sans);font-weight:500;text-transform:uppercase;letter-spacing:.32em;font-size:.7rem}
+.wm{font-family:var(--serif);font-weight:600;line-height:.94;letter-spacing:.015em}
+.wm i{font-style:italic;font-weight:500;color:var(--amber)}
+.btn{display:inline-block;font-family:var(--sans);font-weight:500;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:.85rem 1.8rem;border-radius:999px;border:1px solid currentColor;transition:.2s}
 
-/* top */
-.top{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:center;padding:1.8rem 0}
-.top .name{color:#fff;font-size:.95rem;letter-spacing:.34em;text-transform:uppercase;font-weight:400}
+/* ===== Hero (ondas) ===== */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--cream);background:var(--verde) url('img/wave-field.svg') center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,40,30,.25),rgba(20,40,30,.45))}
+.hero .inner{position:relative;z-index:2;padding:5rem 1rem}
+.hero .kicker{color:#cdbf8e}
+.hero .wm{font-size:clamp(3rem,9vw,6rem);color:#F4EFE3;margin:1.2rem 0 1rem;text-shadow:0 .5px 0 rgba(255,255,255,.12),0 2px 10px rgba(0,0,0,.28)}
+.hero .sig{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.1rem,2.6vw,1.5rem);color:#E7E0D2;letter-spacing:.02em}
+.hero .btn{margin-top:2.6rem;color:#F4EFE3;border-color:rgba(244,239,227,.55)}
+.hero .btn:hover{background:#F4EFE3;color:var(--verde);border-color:#F4EFE3}
 
-/* hero */
-.hero{position:relative;height:100svh;min-height:600px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
-.hero::before{content:"";position:absolute;inset:0;background:url("img/hero.jpg") center 28%/cover no-repeat}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,9,6,.45),rgba(12,9,6,.25) 45%,rgba(12,9,6,.65))}
-.hero .inner{position:relative;z-index:2;padding:0 1rem}
-.hero .label{color:#E7C77F}
-.hero h1{font-weight:300;font-size:clamp(2.6rem,7vw,5.4rem);line-height:1.04;margin:1.4rem 0 2.4rem;text-shadow:0 2px 30px rgba(0,0,0,.3)}
-.hero h1 em{font-style:italic}
+/* ===== Statement ===== */
+.statement{padding:8rem 0 3rem;text-align:center}
+.statement .kicker{color:var(--salvia)}
+.statement h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3.2rem);line-height:1.12;color:var(--verde);max-width:16ch;margin:1.2rem auto 0}
+.statement p{margin:1.6rem auto 0;max-width:48ch;color:#54514a;font-size:1.05rem}
+.services{margin-top:2.4rem;font-family:var(--sans);font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:.7rem;color:var(--salvia)}
 
-/* statement */
-.statement{padding:9rem 0;text-align:center}
-.statement h2{font-weight:300;font-size:clamp(1.8rem,4.5vw,3rem);line-height:1.2;max-width:18ch;margin:0 auto}
-.statement p{margin:1.6rem auto 0;max-width:46ch;color:var(--muted);font-size:1.02rem}
-.whisper{margin-top:2.4rem;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink);opacity:.55}
+/* ===== Feature image ===== */
+.feature{padding:5rem 0 8rem}
+.feature figure{width:min(560px,84%);margin-inline:auto}
+.feature img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;box-shadow:0 30px 60px rgba(31,61,45,.22)}
+.feature figcaption{text-align:center;margin-top:1.2rem;font-family:var(--serif);font-style:italic;color:var(--salvia);font-size:1rem}
 
-/* image feature */
-.feature{padding:0 0 9rem}
-.feature figure{width:min(560px,82%);margin-inline:auto}
-.feature img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px;box-shadow:0 30px 60px rgba(21,17,13,.22)}
-.feature figcaption{text-align:center;margin-top:1.2rem;font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+/* ===== Contact / hub ===== */
+.contact{background:var(--verde-deep);color:var(--cream);text-align:center;padding:7rem 0 5rem;position:relative}
+.contact .kicker{color:#cdbf8e}
+.contact h3{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3rem);margin:1rem 0 2.4rem;color:#F4EFE3}
+.contact .btn{color:#F4EFE3;border-color:var(--amber);background:transparent}
+.contact .btn:hover{background:var(--amber);color:var(--verde-deep);border-color:var(--amber)}
+.hub{display:flex;flex-wrap:wrap;justify-content:center;gap:1.4rem 2.6rem;margin:3.4rem auto 0;max-width:680px}
+.hub a{display:flex;align-items:center;gap:.6rem;color:#D7D0C0;font-size:.9rem;transition:.2s}
+.hub a:hover{color:#fff}
+.hub .ic{width:18px;height:18px;fill:#9fb3a4;flex-shrink:0;transition:.2s}
+.hub a:hover .ic{fill:var(--amber)}
+.hub .two{display:flex;flex-direction:column;line-height:1.3;text-align:left}
+.foot{margin-top:3.6rem;font-size:.78rem;letter-spacing:.06em;color:#8aa092}
+.foot .url{font-family:var(--serif);font-size:1.15rem;color:#CBD3CC;letter-spacing:.02em}
+.foot .sig{font-family:var(--serif);font-style:italic;color:#8aa092}
 
-/* contact */
-.contact{background:var(--ink);color:var(--bone);text-align:center;padding:7rem 0}
-.contact h3{font-weight:300;font-size:clamp(1.8rem,4.5vw,2.8rem);margin-bottom:2.4rem}
-.contact .links{display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;margin-top:3rem;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#C9BFAF}
-.contact .links a{border-bottom:1px solid transparent;padding-bottom:2px;transition:.2s}
-.contact .links a:hover{border-color:var(--gold);color:#fff}
-.contact .foot{margin-top:3.4rem;font-size:.72rem;letter-spacing:.16em;color:#7C7264}
-.contact .foot em{font-style:italic;font-family:"Fraunces",serif;letter-spacing:.04em}
-
-@media(max-width:640px){ .statement{padding:6rem 0} .feature{padding-bottom:6rem} .contact{padding:5rem 0} }
+@media(max-width:640px){.statement{padding-top:6rem}.feature{padding-bottom:6rem}.hub{gap:1.2rem 1.6rem}}
 </style>
 </head>
 <body>
 
-<!-- ====== PREENCHER antes de publicar ======
-  WhatsApp: troque 5553999529747 (DDI55 + DDD + número)
-  Spotify: troque SPOTIFY_URL pelo link do perfil (ou remova o link se ainda não houver)
-=========================================== -->
-
-<div class="top"><span class="name serif">Cibele e Rafael</span></div>
-
 <header class="hero">
   <div class="inner">
-    <p class="label">Música ao vivo · Bagé/RS e região</p>
-    <h1 class="serif">Um passeio sonoro<br><em>pelo Brasil</em></h1>
-    <!-- PREENCHER WhatsApp -->
+    <p class="kicker">Música brasileira ao vivo · Bagé/RS e região</p>
+    <h1 class="wm">Cibele <i>e</i> Rafael</h1>
+    <p class="sig">um passeio sonoro pelo Brasil</p>
     <a class="btn" href="https://wa.me/5553999529747?text=Ol%C3%A1!%20Vim%20pelo%20site%20de%20voc%C3%AAs." target="_blank" rel="noopener">Convide a dupla</a>
   </div>
 </header>
 
 <section class="statement">
   <div class="wrap">
-    <h2 class="serif">Muitos Brasis num só repertório.</h2>
-    <p>Do samba ao choro, da bossa ao baião — música brasileira elegante para receber bem quem importa.</p>
-    <div class="whisper">Duo · Trio · Banda</div>
+    <p class="kicker">A proposta</p>
+    <h2>Muitos Brasis num só repertório.</h2>
+    <p>Do samba ao choro, da bossa ao baião — música brasileira elegante, calorosa e curatorial, para receber bem quem importa.</p>
+    <p class="services">Casamentos · Recepções · Corporativo · Vinícolas &amp; eventos</p>
   </div>
 </section>
 
 <section class="feature">
   <figure>
-    <img src="img/sobre.jpg" alt="Cibele e Rafael" />
+    <img src="img/sobre.jpg" alt="Cibele e Rafael — duo de música ao vivo" />
     <figcaption>Cibele e Rafael</figcaption>
   </figure>
 </section>
 
 <section class="contact">
   <div class="wrap">
-    <p class="label" style="color:var(--gold)">Para o seu evento</p>
+    <p class="kicker">Para o seu evento</p>
     <h3 class="serif">Vamos conversar?</h3>
-    <!-- PREENCHER WhatsApp -->
-    <a class="btn" style="color:var(--bone)" href="https://wa.me/5553999529747?text=Ol%C3%A1!%20Gostaria%20de%20uma%20proposta." target="_blank" rel="noopener">Chamar no WhatsApp</a>
-    <div class="links">
-      <a href="https://www.tiktok.com/@cibele.e.rafael" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://instagram.com/rafaelsilva.pr" target="_blank" rel="noopener">@rafaelsilva.pr</a>
-      <a href="https://instagram.com/martinezzcibele" target="_blank" rel="noopener">@martinezzcibele</a>
-      <a href="https://open.spotify.com/artist/0Jr9Wb6RshiRS6lm1VDwEt" target="_blank" rel="noopener">Spotify</a>
+    <a class="btn" href="https://wa.me/5553999529747?text=Ol%C3%A1!%20Gostaria%20de%20uma%20proposta%20para%20meu%20evento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+
+    <nav class="hub" aria-label="Redes e contato">
+      <a href="https://wa.me/5553999529747" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.48-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+        <span>(53) 99952-9747</span>
+      </a>
+      <a href="https://instagram.com/rafaelsilva.pr" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.12-1.38 5.86 5.86 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.12A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.41a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+        <span class="two"><span>@rafaelsilva.pr</span><span>@martinezzcibele</span></span>
+      </a>
+      <a href="https://www.tiktok.com/@cibele.e.rafael" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        <span>@cibele.e.rafael</span>
+      </a>
+      <a href="https://open.spotify.com/artist/0Jr9Wb6RshiRS6lm1VDwEt" target="_blank" rel="noopener" aria-label="Spotify">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-1.02-.12-1.14-.6-.12-.48.12-1.02.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.18.54.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.1 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.32-1.26 11.4-1.02 15.9 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.62.3z"/></svg>
+        <span>Rafael da Silva</span>
+      </a>
+      <a href="https://facebook.com/61586773124987" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        <span>Cibele e Rafael</span>
+      </a>
+    </nav>
+
+    <div class="foot">
+      <div class="url">cibeleerafael.com.br</div>
+      <div style="margin-top:.6rem">Bagé / RS e região · <span class="sig">um passeio sonoro pelo Brasil</span></div>
     </div>
-    <div class="foot">Bagé/RS e região · <em>um passeio sonoro pelo Brasil</em></div>
   </div>
 </section>
 
