@@ -45,12 +45,12 @@ img{display:block;max-width:100%}
 }
 
 /* ===== Hero (home, foto real) ===== */
-.hero{position:relative;min-height:92svh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--cream);background:var(--verde)}
+.hero{position:relative;min-height:92svh;display:flex;align-items:flex-end;justify-content:center;text-align:center;color:var(--cream);background:var(--verde)}
 .hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,46,35,.42),rgba(24,46,35,.62))}
-.hero .inner{position:relative;z-index:2;padding:5rem 1rem}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,46,35,.18) 0%,rgba(24,46,35,.16) 42%,rgba(24,46,35,.72) 100%)}
+.hero .inner{position:relative;z-index:2;padding:5rem 1rem clamp(3.2rem,9vh,6rem)}
 .hero .kicker{color:#dfd3a8}
-.hero .wm{font-size:clamp(2.8rem,8.5vw,5.6rem);color:#F4EFE3;margin:1.2rem 0 1rem;text-shadow:0 2px 14px rgba(0,0,0,.35)}
+.hero .wm{font-size:clamp(2.6rem,7.2vw,5.1rem);color:#F4EFE3;margin:0 0 .75rem;text-shadow:0 2px 14px rgba(0,0,0,.35)}
 .hero .sig{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.1rem,2.6vw,1.5rem);color:#EDE6D6;letter-spacing:.02em;text-shadow:0 1px 8px rgba(0,0,0,.3)}
 .hero .btn{margin-top:2.6rem;color:#F4EFE3;border-color:rgba(244,239,227,.6)}
 .hero .btn:hover{background:#F4EFE3;color:var(--verde);border-color:#F4EFE3}
