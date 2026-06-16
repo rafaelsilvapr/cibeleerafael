@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rafaelsilvapr.github.io/cibeleerafael/sitemap.xml
+Sitemap: https://cibeleerafael.com.br/sitemap.xml
