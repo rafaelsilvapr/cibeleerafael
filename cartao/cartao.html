@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="google-site-verification" content="2UobCmpfD5VEyE0msvuyrGfCyAPTpGHE51-8KU2DoK0" />
+<title>Cartão — Cibele e Rafael</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+/* 90x50mm + 3mm sangria = 96x56mm. Corte final 90x50mm. */
+@page{ size:96mm 56mm; margin:0; }
+*{margin:0;padding:0;box-sizing:border-box}
+:root{ --ink:#15110D; --bone:#F3EEE4; --gold:#B8923F; --muted:#8E8678; }
+.serif{font-family:"Fraunces",Georgia,serif}
+.card{width:96mm;height:56mm;position:relative;overflow:hidden;page-break-after:always;
+  font-family:"Inter",sans-serif;color:var(--ink);font-weight:300}
+.pad{position:absolute;inset:8mm;display:flex;flex-direction:column}
+
+/* FRENTE */
+.front{background:radial-gradient(130% 150% at 50% 18%, #221A12 0%, #15110D 65%)}
+.front .pad{align-items:center;justify-content:center;text-align:center}
+.front .top{position:absolute;top:7mm;left:0;right:0;text-align:center;font-size:6pt;letter-spacing:.34em;text-transform:uppercase;color:rgba(243,238,228,.5)}
+.front .name{font-family:"Fraunces",serif;font-weight:400;font-size:27pt;color:#fff;line-height:1}
+.front .sig{font-family:"Fraunces",serif;font-style:italic;font-weight:400;font-size:10.5pt;color:var(--gold);margin-top:2.6mm}
+
+/* VERSO */
+.back{background:var(--bone)}
+.back .pad{flex-direction:row;justify-content:space-between;gap:5mm}
+.back .l{display:flex;flex-direction:column;height:100%}
+.back .name{font-family:"Fraunces",serif;font-weight:400;font-size:13pt}
+.back .sig{font-family:"Fraunces",serif;font-style:italic;font-size:7.4pt;color:var(--gold);margin-top:.6mm}
+.back .info{margin-top:auto;display:flex;flex-direction:column;gap:1.5mm;font-size:7.6pt;color:var(--ink)}
+.back .info .k{font-size:5.6pt;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:.2mm}
+.back .r{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;gap:1.4mm}
+.back .qr{width:20mm;height:20mm}
+.back .qr img{width:100%;height:100%}
+.back .scan{font-size:5.4pt;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+</style>
+<script defer data-domain="cibeleerafael.com.br" src="https://plausible.io/js/script.outbound-links.js"></script>
+</head>
+<body>
+
+<!-- FRENTE -->
+<div class="card front">
+  <div class="top">Música ao vivo</div>
+  <div class="pad">
+    <div class="name">Cibele e Rafael</div>
+    <div class="sig">um passeio sonoro pelo Brasil</div>
+  </div>
+</div>
+
+<!-- VERSO -->
+<div class="card back">
+  <div class="pad">
+    <div class="l">
+      <div>
+        <div class="name">Cibele e Rafael</div>
+        <div class="sig">um passeio sonoro pelo Brasil</div>
+      </div>
+      <div class="info">
+        <!-- PREENCHER WhatsApp -->
+        <span><span class="k">WhatsApp</span>(53) 99952-9747</span>
+        <span><span class="k">Instagram</span>@rafaelsilva.pr · @martinezzcibele</span>
+        <span><span class="k">Site</span>cibeleerafael.com.br · Bagé/RS e região</span>
+      </div>
+    </div>
+    <div class="r">
+      <div class="qr"><img src="qr.svg" alt="cibeleerafael.com.br" /></div>
+      <div class="scan">ouça e contrate</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
